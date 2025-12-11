@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://vitejs.dev/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Preferred Partners of the Hamptons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Montserrat"', 'sans-serif'], // Updated to Sans-Serif as requested for Headers
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            colors: {
+              hamptons: {
+                navy: '#3b1151', // Deep Royal Purple from Logo
+                sand: '#f3f4f6',
+                gold: '#d4af37', // Metallic Gold
+                white: '#ffffff',
+                blue: '#1e3a8a'
+              }
+            },
+            spacing: {
+              'safe-bottom': 'env(safe-area-inset-bottom)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
